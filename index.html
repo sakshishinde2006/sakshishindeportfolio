@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Shinde - Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+</head>
+<body>
+    <div class="portfolio-container">
+        <!-- Animated Background -->
+        <div class="background-wrapper">
+            <div class="base-gradient"></div>
+            
+            <!-- Animated gradient blobs -->
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            
+            <!-- Floating geometric shapes -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            
+            <!-- Design elements - SVG paths -->
+            <svg class="svg-draw svg-1" viewBox="0 0 200 200">
+                <path d="M 20 100 Q 60 20, 100 100 T 180 100" stroke="url(#gradient1)" stroke-width="3" fill="none" stroke-dasharray="500" stroke-dashoffset="500" />
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#ec4899" />
+                        <stop offset="100%" stop-color="#8b5cf6" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            
+            <svg class="svg-draw svg-2" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="80" stroke="url(#gradient2)" stroke-width="3" fill="none" stroke-dasharray="500" stroke-dashoffset="500" />
+                <defs>
+                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#3b82f6" />
+                        <stop offset="100%" stop-color="#ec4899" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            
+            <!-- Brush strokes -->
+            <div class="brush-stroke brush-1"></div>
+            <div class="brush-stroke brush-2"></div>
+            
+            <!-- Color palette circles -->
+            <div class="color-palette">
+                <div class="palette-circle circle-1"></div>
+                <div class="palette-circle circle-2"></div>
+                <div class="palette-circle circle-3"></div>
+            </div>
+            
+            <!-- Grid overlay -->
+            <div class="grid-overlay"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <div class="logo">Sakshi Shinde</div>
+                    
+                    <!-- Desktop Menu -->
+                    <div class="nav-menu desktop-menu">
+                        <a href="#home" class="nav-link">
+                            Home
+                            <span class="nav-underline"></span>
+                        </a>
+                        <a href="#about" class="nav-link">
+                            About
+                            <span class="nav-underline"></span>
+                        </a>
+                        <a href="#portfolio" class="nav-link">
+                            Portfolio
+                            <span class="nav-underline"></span>
+                        </a>
+                        <a href="#contact" class="nav-link">
+                            Contact
+                            <span class="nav-underline"></span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                        <i data-lucide="x" class="close-icon hidden"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <a href="#home" class="mobile-link">Home</a>
+                    <a href="#about" class="mobile-link">About</a>
+                    <a href="#portfolio" class="mobile-link">Portfolio</a>
+                    <a href="#contact" class="mobile-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-in">
+                    <span class="badge-text">Creative Designer & Visual Storyteller</span>
+                </div>
+                
+                <h1 class="hero-title animate-fade-in-up">
+                    <span class="gradient-text">SAKSHI SHINDE</span>
+                </h1>
+                
+                <p class="hero-subtitle animate-fade-in-up delay-200">
+                    Crafting extraordinary visual experiences that inspire, engage, and transform brands
+                </p>
+                
+                <div class="hero-buttons animate-fade-in-up delay-400">
+                    <a href="#portfolio" class="btn btn-primary">
+                        View My Work
+                        <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="gradient-text">About Me</span>
+                </h2>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3 class="about-card-title pink">Creative Vision</h3>
+                        <p class="about-card-text">
+                            With over 8 years of experience in graphic design, I specialize in creating compelling visual narratives that resonate with audiences. My approach combines strategic thinking with artistic excellence to deliver designs that don't just look beautiful—they work.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3 class="about-card-title purple">My Process</h3>
+                        <p class="about-card-text">
+                            I believe in collaborative creativity. Every project begins with deep research and understanding of your brand, followed by iterative design exploration. The result? Visual solutions that authentically represent your vision and captivate your audience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="skills-container">
+                    <h3 class="skills-title gradient-text">Skills & Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i data-lucide="palette" class="skill-icon"></i>
+                                    <span>Brand Identity</span>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i data-lucide="code" class="skill-icon"></i>
+                                    <span>UI/UX Design</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i data-lucide="lightbulb" class="skill-icon"></i>
+                                    <span>Illustration</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i data-lucide="target" class="skill-icon"></i>
+                                    <span>Motion Graphics</span>
+                                </div>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container-large">
+                <h2 class="section-title">
+                    <span class="gradient-text">Featured Work</span>
+                </h2>
+                <p class="section-subtitle">
+                    A collection of my latest projects showcasing creativity, strategy, and visual excellence
+                </p>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=600&fit=crop" alt="Brand Identity System">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Branding</span>
+                            <h3 class="portfolio-title">Brand Identity System</h3>
+                            <button class="portfolio-btn">View Project</button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Mobile App UI/UX">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">UI/UX Design</span>
+                            <h3 class="portfolio-title">Mobile App UI/UX</h3>
+                            <button class="portfolio-btn">View Project</button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop" alt="Editorial Design">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Print Design</span>
+                            <h3 class="portfolio-title">Editorial Design</h3>
+                            <button class="portfolio-btn">View Project</button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&h=600&fit=crop" alt="Web Design System">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Web Design</span>
+                            <h3 class="portfolio-title">Web Design System</h3>
+                            <button class="portfolio-btn">View Project</button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=800&h=600&fit=crop" alt="Packaging Design">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Branding</span>
+                            <h3 class="portfolio-title">Packaging Design</h3>
+                            <button class="portfolio-btn">View Project</button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1618609378039-b572f64c5b42?w=800&h=600&fit=crop" alt="3D Visualization">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">3D Design</span>
+                            <h3 class="portfolio-title">3D Visualization</h3>
+                            <button class="portfolio-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="gradient-text">Client Testimonials</span>
+                </h2>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="testimonial-text">"Absolutely brilliant work! The brand identity exceeded all our expectations and truly captured our vision."</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Sarah Johnson</p>
+                            <p class="author-role">CEO, TechStart</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="testimonial-text">"A true professional with an incredible eye for detail. Delivered stunning designs on time and on budget."</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Michael Chen</p>
+                            <p class="author-role">Marketing Director</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="testimonial-text">"Working together was a dream. The creativity and strategic thinking brought our project to life."</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Emma Williams</p>
+                            <p class="author-role">Founder, Creative Co</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container-medium">
+                <h2 class="section-title">
+                    <span class="gradient-text">Let's Create Together</span>
+                </h2>
+                <p class="section-subtitle">
+                    Have a project in mind? I'd love to hear about it. Let's bring your vision to life.
+                </p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon-wrapper pink">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">sakshishinde@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon-wrapper purple">
+                                <i data-lucide="phone" class="contact-icon"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Phone</p>
+                                <p class="contact-value">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon-wrapper blue">
+                                <i data-lucide="map-pin" class="contact-icon"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Location</p>
+                                <p class="contact-value">Latur,Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <input 
+                                type="text" 
+                                id="name" 
+                                placeholder="Your Name" 
+                                class="form-input"
+                                required
+                            />
+                            <input 
+                                type="email" 
+                                id="email" 
+                                placeholder="Your Email" 
+                                class="form-input"
+                                required
+                            />
+                            <textarea 
+                                id="message" 
+                                placeholder="Your Message" 
+                                rows="5" 
+                                class="form-textarea"
+                                required
+                            ></textarea>
+                            <button type="submit" class="form-submit">
+                                Send Message
+                                <i data-lucide="send" class="btn-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 sakshi shinde. All rights reserved.</p>
+                <p class="footer-subtext">Crafted with passion and creativity</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
